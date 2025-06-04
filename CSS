@@ -1,0 +1,29 @@
+Disease_Prediction_Capstone/  
+│  
+├── data/  
+│   ├── raw/  
+│   └── processed/  
+│  
+├── notebooks/  
+│   ├── 01_EDA.ipynb  
+│   └── 02_Model_Training.ipynb  
+│  
+├── src/  
+│   ├── data_loader.py  
+│   ├── preprocessing.py  
+│   ├── model.py  
+│   ├── train.py  
+│   ├── evaluate.py  
+│   └── utils.py  
+│  
+├── models/  
+│   ├── trained_model.pkl  
+│  
+├── results/  
+│   ├── roc_curve.png  
+│   ├── confusion_matrix.png  
+│   └── feature_importance.png  
+│  
+├── requirements.txt  
+├── README.md  
+└── LICENSE (MIT license)  
