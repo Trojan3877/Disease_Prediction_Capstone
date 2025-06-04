@@ -1,3 +1,5 @@
+![Project Pipeline](pipeline_diagram.png)
+
 # Disease_Prediction_Capstone
 PIMA Indian Diabetes Dataset
 # Disease Prediction Capstone
