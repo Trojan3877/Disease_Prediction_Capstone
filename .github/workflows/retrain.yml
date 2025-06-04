@@ -1,0 +1,47 @@
+name: Scheduled Retraining
+
+# Run this workflow on a schedule—for example, every Sunday at 2 AM UTC
+on:
+  schedule:
+    - cron: "0 2 * * 0"
+
+jobs:
+  retrain:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.9
+
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Update raw data
+        run: |
+          python update_data.py
+
+      - name: Train model on new data
+        run: |
+          python src/train.py \
+            --data_path data/raw/diabetes.csv \
+            --output_model models/trained_model.pkl
+
+      - name: Evaluate new model
+        run: |
+          python src/evaluate.py \
+            --model_path models/trained_model.pkl \
+            --data_path data/raw/diabetes.csv
+
+      - name: Commit updated results (optional)
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "github-actions"
+          git add results/ models/
+          git commit -m "Auto-retrained model and updated results [skip ci]" || echo "No changes to commit"
+          git push
