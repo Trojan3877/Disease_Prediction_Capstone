@@ -1,0 +1,17 @@
+import pandas as pd
+from src.preprocessing import preprocess_data
+
+def test_preprocess_data_replaces_zeros():
+    # Create a tiny toy DataFrame
+    df = pd.DataFrame({
+        "Glucose": [0, 150],
+        "BloodPressure": [0, 70],
+        "SkinThickness": [0, 20],
+        "Insulin": [0, 80],
+        "BMI": [0.0, 30.0],
+        "Outcome": [0, 1]
+    })
+    X, y, scaler = preprocess_data(df)
+    assert X.shape == (2, 5)
+    # After replace+scale, no column should still be exactly 0
+    assert (X.min(axis=0) != 0).all()
