@@ -1,3 +1,12 @@
+![MIT License](https://img.shields.io/badge/license-MIT-green.svg)
+![GitHub repo stars](https://img.shields.io/github/stars/Trojan3877/Diabetes-Prediction-Capstone-Project?style=social)
+![GitHub forks](https://img.shields.io/github/forks/Trojan3877/Diabetes-Prediction-Capstone-Project?style=social)
+![Build passing](https://img.shields.io/github/actions/workflow/status/Trojan3877/Diabetes-Prediction-Capstone-Project/ci.yml?branch=main)
+![Python version](https://img.shields.io/badge/python-3.9%2B-blue)
+
+
+
+
 ![image](https://github.com/user-attachments/assets/ffc83026-f2b0-4653-a4eb-814ad54750b5)
 
 
