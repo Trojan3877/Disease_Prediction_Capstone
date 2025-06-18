@@ -1,0 +1,28 @@
+Disease_Prediction_Capstone/
+│
+├── data/
+│   └── dataset.csv
+│
+├── notebooks/
+│   └── EDA.ipynb
+│
+├── src/
+│   ├── config.py
+│   ├── preprocessing.py
+│   ├── train.py
+│   ├── evaluate.py
+│   ├── predict.py
+│   └── utils.py
+│
+├── tests/
+│   └── test_metrics.py
+│
+├── outputs/
+│   ├── confusion_matrix.png
+│   └── classification_report.txt
+│
+├── Dockerfile
+├── requirements.txt
+├── .gitignore
+├── README.md (with updated badges, tags, ML model list)
+└── LICENSE
