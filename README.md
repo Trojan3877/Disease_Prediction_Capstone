@@ -5,6 +5,7 @@
 ![Platform](https://img.shields.io/badge/Platform-Cloud%20Ready-informational)
 ![ML Model](https://img.shields.io/badge/ML-Random%20Forest%20%7C%20LogReg-lightgrey)
 ![Status](https://img.shields.io/badge/Status-Capstone--Ready-green)
+https://codecov.io/gh/Trojan3877/Disease_Prediction_Capstone/branch/main/graph/badge.svg
 
 🧠 ML Algorithms Used
 ✅ Random Forest Classifier: For robust disease classification with high accuracy
