@@ -17,7 +17,6 @@
 <p align="center">
   <img src="https://raw.githubusercontent.com/Trojan3877/asset-storage/main/banners/diabetes_prediction_dark.png" 
        alt="Diabetes Prediction System - Dark Banner" width="100%">
-</p>
 
 ---
 
