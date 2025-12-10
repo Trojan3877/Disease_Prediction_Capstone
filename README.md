@@ -80,6 +80,13 @@ https://raw.githubusercontent.com/Trojan3877/asset-storage/main/diagrams/diabete
        width="95%">
 </p>
 
+## 🧠 RAG + LLM Intelligence Layer
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Trojan3877/asset-storage/main/diagrams/diabetes_rag_flow_dark.png"
+       alt="RAG + LLM Flow Diagram - Diabetes Prediction System"
+       width="95%">
+</p>
 
 ---
 
