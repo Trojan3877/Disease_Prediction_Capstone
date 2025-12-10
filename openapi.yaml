@@ -1,0 +1,47 @@
+openapi: 3.0.3
+info:
+  title: Diabetes Prediction MCP API
+  version: "1.0.0"
+  description: MCP-enabled API for ML prediction, retraining, and RAG medical Q&A.
+
+paths:
+  /predict:
+    post:
+      summary: Predict diabetes risk
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                features:
+                  type: array
+                  items:
+                    type: number
+      responses:
+        "200":
+          description: Prediction result
+
+  /retrain:
+    post:
+      summary: Retrain the ML model
+      responses:
+        "200":
+          description: Retraining complete
+
+  /rag_query:
+    post:
+      summary: Perform RAG + LLM query
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                question:
+                  type: string
+      responses:
+        "200":
+          description: Query result
