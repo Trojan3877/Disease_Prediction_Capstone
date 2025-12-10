@@ -53,7 +53,35 @@ Diabetes_Prediction_Capstone/
 ├── README.md
 └── .gitignore
 
- align="center">
+
+✔ Clear modular separation
+
+api/ → serving layer (FastAPI)
+
+training/ → ML lifecycle code
+
+rag/ → retrieval + LLM reasoning
+
+preprocessing/ → data prep + feature engineering
+
+utils/ → shared helpers + validators
+
+models/ → persisted artifacts
+
+✔ CI/CD ready
+
+GitHub Actions pipeline inside:
+
+.github/workflows/ci_cd.yml
+
+✔ Deployment-ready
+
+Dockerfile, DEPLOYMENT.md, .env.example provide real-world deployment patterns.
+
+
+
+
+align="center">
   <img src="https://raw.githubusercontent.com/Trojan3877/asset-storage/main/diagrams/diabetes_folder_structure_dark.png"
        alt="Folder Structure Diagram - Diabetes Prediction System"
        width="95%">
