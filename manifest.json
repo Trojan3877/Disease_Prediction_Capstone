@@ -1,0 +1,37 @@
+{
+  "name": "diabetes-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP-enabled Diabetes Prediction + RAG + LLM System",
+  "tools": [
+    {
+      "name": "predict",
+      "description": "Predict diabetes risk using trained ML model.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "features": {
+            "type": "array",
+            "items": { "type": "number" }
+          }
+        },
+        "required": ["features"]
+      }
+    },
+    {
+      "name": "retrain",
+      "description": "Retrain ML pipeline and update model.",
+      "input_schema": { "type": "object", "properties": {} }
+    },
+    {
+      "name": "rag_query",
+      "description": "Ask medical questions using RAG + OpenAI LLM.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "question": { "type": "string" }
+        },
+        "required": ["question"]
+      }
+    }
+  ]
+}
