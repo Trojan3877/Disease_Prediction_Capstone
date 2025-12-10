@@ -53,17 +53,7 @@ Diabetes_Prediction_Capstone/
 ├── README.md
 └── .gitignore
 
-
----
-
-# 🖼 2. Visual Folder Structure Diagram (PNG)
-
-Add this snippet in your README:
-
-```markdown
-## 🗂 Project Structure Diagram
-
-<p align="center">
+ align="center">
   <img src="https://raw.githubusercontent.com/Trojan3877/asset-storage/main/diagrams/diabetes_folder_structure_dark.png"
        alt="Folder Structure Diagram - Diabetes Prediction System"
        width="95%">
