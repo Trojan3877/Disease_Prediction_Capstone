@@ -1,36 +1,31 @@
-# predict.py
-"""
-FastAPI endpoint to make disease predictions based on trained ML model.
-"""
-from fastapi import FastAPI, HTTPException
-from pydantic import BaseModel
+import numpy as np
 import joblib
-import pandas as pd
+from src.utils.logger import get_logger
+from src.utils.helpers import load_config
+from src.utils.exceptions import PredictionError
 
-# Load the trained model
-model = joblib.load("models/disease_model.pkl")
+logger = get_logger(__name__)
 
-# Define expected input schema
-class PatientData(BaseModel):
-    age: int
-    bmi: float
-    blood_pressure: float
-    cholesterol: float
-    glucose: float
-
-# Initialize FastAPI app
-app = FastAPI(title="Disease Prediction API")
-
-@app.get("/")
-def read_root():
-    return {"message": "Welcome to the Disease Prediction API"}
-
-@app.post("/predict")
-def predict_disease(data: PatientData):
+def predict(input_data):
     try:
-        df = pd.DataFrame([data.dict()])
-        prediction = model.predict(df)
-        result = "Positive" if prediction[0] == 1 else "Negative"
-        return {"prediction": result}
+        config = load_config()
+
+        model = joblib.load(config["paths"]["model_file"])
+        scaler_path = config["paths"]["scaler_file"]
+
+        if Path(scaler_path).exists():
+            scaler = joblib.load(scaler_path)
+            input_data = scaler.transform([input_data])
+
+        prediction = model.predict(input_data)[0]
+        probability = model.predict_proba(input_data)[0][1]
+
+        logger.info(f"Prediction: {prediction}, Prob={probability:.4f}")
+
+        return {
+            "prediction": int(prediction),
+            "probability": float(probability)
+        }
+
     except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
+        raise PredictionError(f"Prediction failed: {e}")
