@@ -70,11 +70,8 @@ This system delivers:
 > _Architecture diagram placeholder — you may replace with a PNG later._
 ## 🏗️ System Architecture
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/Trojan3877/asset-storage/main/diagrams/diabetes_architecture_dark.png"
-       alt="System Architecture Diagram - Diabetes Prediction System"
-       width="95%">
-</p>
+https://raw.githubusercontent.com/Trojan3877/asset-storage/main/diagrams/diabetes_architecture_dark.png
+
 
 ---
 
