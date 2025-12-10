@@ -1,0 +1,80 @@
+{
+  "info": {
+    "_postman_id": "a1b3c6f8-93fe-42fb-9df8-d17b12f77af4",
+    "name": "Diabetes Prediction API",
+    "description": "Postman collection for Diabetes Prediction + RAG + LLM Explainability API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Ping Server",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{BASE_URL}}/ping",
+          "host": ["{{BASE_URL}}"],
+          "path": ["ping"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Predict Diabetes",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"Pregnancies\": 2,\n  \"Glucose\": 130,\n  \"BloodPressure\": 70,\n  \"SkinThickness\": 20,\n  \"Insulin\": 80,\n  \"BMI\": 30.5,\n  \"DiabetesPedigreeFunction\": 0.45,\n  \"Age\": 34\n}"
+        },
+        "url": {
+          "raw": "{{BASE_URL}}/predict",
+          "host": ["{{BASE_URL}}"],
+          "path": ["predict"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "RAG + LLM Medical Explanation",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"Pregnancies\": 2,\n  \"Glucose\": 130,\n  \"BloodPressure\": 70,\n  \"SkinThickness\": 20,\n  \"Insulin\": 80,\n  \"BMI\": 30.5,\n  \"DiabetesPedigreeFunction\": 0.45,\n  \"Age\": 34\n}"
+        },
+        "url": {
+          "raw": "{{BASE_URL}}/explain",
+          "host": ["{{BASE_URL}}"],
+          "path": ["explain"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Model Metadata",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{BASE_URL}}/model-info",
+          "host": ["{{BASE_URL}}"],
+          "path": ["model-info"]
+        }
+      },
+      "response": []
+    }
+  ],
+  "variable": [
+    {
+      "key": "BASE_URL",
+      "value": "http://localhost:8000"
+    }
+  ]
+}
