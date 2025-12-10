@@ -1,64 +1,71 @@
 Diabetes_Prediction_Capstone/
 │
-├── README.md
-├── LICENSE
-├── .gitignore
-├── requirements.txt
-├── config.yaml
-├── metrics.md
-├── architecture_diagram.png
+├── data/
+│ ├── raw/
+│ └── processed/
+│
+├── notebooks/
+│ └── demo.ipynb
 │
 ├── src/
-│   ├── data/
-│   │   ├── load_data.py
-│   │   ├── preprocess.py
-│   │   └── split.py
-│   │
-│   ├── features/
-│   │   ├── feature_engineering.py
-│   │   └── scaler.pkl
-│   │
-│   ├── models/
-│   │   ├── train.py
-│   │   ├── predict.py
-│   │   ├── evaluate.py
-│   │   ├── model_utils.py
-│   │   ├── model.pkl
-│   │   ├── xgb_model.json
-│   │   └── lgbm_model.txt
-│   │
-│   └── utils/
-│       ├── logger.py
-│       ├── helpers.py
-│       └── exceptions.py
+│ ├── api/
+│ │ └── main.py
+│ │
+│ ├── models/
+│ │ ├── model.pkl
+│ │ ├── xgb_model.json
+│ │ └── lgbm_model.txt
+│ │
+│ ├── rag/
+│ │ ├── retriever.py
+│ │ ├── explain.py
+│ │ └── embeddings/
+│ │
+│ ├── preprocessing/
+│ │ ├── clean.py
+│ │ ├── engineer.py
+│ │ └── utils.py
+│ │
+│ ├── training/
+│ │ ├── train.py
+│ │ └── evaluate.py
+│ │
+│ ├── config/
+│ │ └── settings.yaml
+│ │
+│ └── utils/
+│ ├── io.py
+│ ├── logger.py
+│ └── validator.py
 │
-├── rag/
-│   ├── ingest.py
-│   ├── embed.py
-│   ├── vectorstore.faiss
-│   └── query.py
+├── .github/
+│ └── workflows/
+│ └── ci_cd.yml
 │
-├── mcp/
-│   ├── server.py
-│   ├── manifest.json
-│   └── openapi.yaml
-│
-├── api/
-│   ├── main.py
-│   ├── endpoints/
-│   │   ├── predict_endpoint.py
-│   │   ├── rag_query_endpoint.py
-│   │   └── retrain_endpoint.py
-│   │
-│   ├── Dockerfile
-│   └── docker-compose.yaml
-│
-├── tests/
-│   ├── test_data_loading.py
-│   ├── test_training.py
-│   ├── test_predictions.py
-│   └── test_api.py
-│
-└── .github/
-    └── workflows/
-        └── ci_cd.yml
+├── Dockerfile
+├── requirements.txt
+├── metrics.md
+├── MODEL_CARD.md
+├── DEPLOYMENT.md
+├── CONTRIBUTING.md
+├── SECURITY.md
+├── .env.example
+├── README.md
+└── .gitignore
+
+
+---
+
+# 🖼 2. Visual Folder Structure Diagram (PNG)
+
+Add this snippet in your README:
+
+```markdown
+## 🗂 Project Structure Diagram
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Trojan3877/asset-storage/main/diagrams/diabetes_folder_structure_dark.png"
+       alt="Folder Structure Diagram - Diabetes Prediction System"
+       width="95%">
+</p>
+
