@@ -2,7 +2,11 @@
 
 # 🩺🔬 **Diabetes Prediction Platform**  
 ### **ML + LLM + RAG + MCP + FastAPI + Docker + CI/CD**
-
+![CI](https://github.com/Trojan3877/Diabetes_Prediction_Capstone/actions/workflows/ci_cd.yml/badge.svg)
+![Docker](https://img.shields.io/badge/Docker-Ready-blue?logo=docker)
+![API](https://img.shields.io/badge/FastAPI-Production-green?logo=fastapi)
+![LLM](https://img.shields.io/badge/RAG%20%2B%20LLM-Enabled-purple?logo=openai)
+![Python](https://img.shields.io/badge/Python-3.10-blue?logo=python)
 ![Python](https://img.shields.io/badge/Python-3.10-blue?style=for-the-badge)
 ![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-ML-orange?style=for-the-badge)
 ![XGBoost](https://img.shields.io/badge/XGBoost-Boosting-red?style=for-the-badge)
