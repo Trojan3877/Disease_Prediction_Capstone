@@ -72,6 +72,14 @@ This system delivers:
 
 https://raw.githubusercontent.com/Trojan3877/asset-storage/main/diagrams/diabetes_architecture_dark.png
 
+## 🔬 Machine Learning Pipeline
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Trojan3877/asset-storage/main/diagrams/diabetes_ml_pipeline_dark.png"
+       alt="Machine Learning Pipeline Diagram - Diabetes Prediction"
+       width="95%">
+</p>
+
 
 ---
 
