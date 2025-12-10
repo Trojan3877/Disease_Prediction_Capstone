@@ -14,6 +14,10 @@
 ![MCP](https://img.shields.io/badge/MCP-Model_Context_Protocol-purple?style=for-the-badge)
 ![MLflow](https://img.shields.io/badge/MLflow-Experiment_Tracking-lightgrey?style=for-the-badge)
 ![CI/CD](https://img.shields.io/badge/GitHub-Actions-black?style=for-the-badge)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Trojan3877/asset-storage/main/banners/diabetes_prediction_dark.png" 
+       alt="Diabetes Prediction System - Dark Banner" width="100%">
+</p>
 
 ---
 
