@@ -1,0 +1,96 @@
+# ============================================================
+# Diabetes Prediction Capstone — Global Configuration File
+# ============================================================
+
+project:
+  name: "Diabetes Prediction ML Platform"
+  version: "1.0.0"
+  author: "Corey Leath"
+
+paths:
+  raw_data: "data/raw/diabetes.csv"
+  processed_data: "data/processed/diabetes_processed.csv"
+  model_dir: "src/models/"
+  model_file: "src/models/model.pkl"
+  xgb_model_file: "src/models/xgb_model.json"
+  lgbm_model_file: "src/models/lgbm_model.txt"
+  scaler_file: "src/features/scaler.pkl"
+  faiss_index: "rag/vectorstore.faiss"
+  rag_docs_dir: "rag/docs/"
+  logs: "logs/"
+
+preprocessing:
+  test_size: 0.2
+  random_state: 42
+  scaling: true
+  handle_missing: true
+  feature_engineering: true
+
+model_training:
+  algorithms:
+    - logistic_regression
+    - random_forest
+    - xgboost
+    - lightgbm
+  
+  logistic_regression:
+    C: 1.0
+    max_iter: 200
+
+  random_forest:
+    n_estimators: 200
+    max_depth: 10
+    random_state: 42
+
+  xgboost:
+    n_estimators: 250
+    learning_rate: 0.05
+    max_depth: 6
+    subsample: 0.8
+    colsample_bytree: 0.8
+
+  lightgbm:
+    num_leaves: 31
+    learning_rate: 0.05
+    n_estimators: 200
+
+mlflow:
+  enabled: true
+  tracking_uri: "mlruns/"
+  experiment_name: "Diabetes_Prediction"
+
+api:
+  host: "0.0.0.0"
+  port: 8000
+  reload: true
+
+llm:
+  provider: "openai"
+  model: "gpt-4o-mini"
+  embedding_model: "sentence-transformers/all-MiniLM-L6-v2"
+  temperature: 0.2
+  max_tokens: 250
+  api_key_env: "OPENAI_API_KEY"
+
+rag:
+  chunk_size: 500
+  chunk_overlap: 50
+  embedding_dim: 384
+  index_type: "faiss_flat"
+  top_k: 5
+
+mcp:
+  server_name: "diabetes-mcp-server"
+  allowed_tools:
+    - predict
+    - retrain
+    - rag_query
+  port: 9001
+
+logging:
+  level: "INFO"
+  use_rich: true
+
+docker:
+  image_name: "diabetes_prediction_api"
+  container_name: "diabetes_ml_container"
