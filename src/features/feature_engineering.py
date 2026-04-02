@@ -60,8 +60,13 @@ def generate_polynomial_features(X: pd.DataFrame) -> pd.DataFrame:
 
     logger.info("Generating polynomial features (degree=2)...")
 
+    feature_names = list(X.columns) if isinstance(X, pd.DataFrame) else None
     poly = PolynomialFeatures(degree=2, include_bias=False)
     X_poly = poly.fit_transform(X)
+
+    if feature_names is not None:
+        col_names = poly.get_feature_names_out(feature_names)
+        return pd.DataFrame(X_poly, columns=col_names)
 
     return pd.DataFrame(X_poly)
 

@@ -26,5 +26,5 @@ def get_xgboost_model():
     Returns:
         XGBClassifier: Untrained XGBoost classifier.
     """
-    xgb_model = xgb.XGBClassifier(use_label_encoder=False, eval_metric='logloss', random_state=42)
+    xgb_model = xgb.XGBClassifier(eval_metric='logloss', random_state=42)
     return xgb_model

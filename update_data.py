@@ -7,8 +7,8 @@ Then calls preprocessing to populate `data/processed/` automatically.
 
 import os
 import requests
-from src.preprocessing import preprocess_data
-from src.data_loader import load_data
+from preprocess import preprocess_data
+from load_data import load_data
 
 # 1. Download new data if available
 DATA_URL = "https://url.to/updated/pima_diabetes.csv"
