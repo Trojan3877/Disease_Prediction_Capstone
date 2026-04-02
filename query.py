@@ -56,7 +56,7 @@ def rag_query(user_question: str):
             max_tokens=config["llm"]["max_tokens"]
         )
 
-        answer = response.choices[0].message["content"]
+        answer = response.choices[0].message.content
         return {
             "answer": answer,
             "sources": retrieved_texts

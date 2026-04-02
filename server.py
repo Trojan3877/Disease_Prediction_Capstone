@@ -1,5 +1,5 @@
 import json
-from mcp.server.fastapi import FastAPI
+from fastapi import FastAPI
 from fastapi import Body
 from src.models.predict import predict
 from src.models.train import train_models
