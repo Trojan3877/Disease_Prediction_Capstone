@@ -1,29 +1,17 @@
-<p align="center">
-  <img src="https://raw.githubusercontent.com/Trojan3877/asset-storage/main/banners/diabetes_prediction_dark.png"
-       alt="Diabetes Prediction Banner" width="100%">
-</p>
+![Python](https://img.shields.io/badge/Python-3.10+-blue?logo=python)
+![ML Pipeline](https://img.shields.io/badge/ML-End--to--End%20Pipeline-orange)
+![Classification](https://img.shields.io/badge/Task-Disease%20Prediction-red)
+![Data Science](https://img.shields.io/badge/Data%20Science-Production%20Ready-purple)
+![Model Evaluation](https://img.shields.io/badge/Metrics-Precision%20%7C%20Recall%20%7C%20F1-blue)
+![Healthcare](https://img.shields.io/badge/Industry-Healthcare%20AI-critical)
+![Status](https://img.shields.io/badge/Status-Portfolio%20Ready-brightgreen)
+![Maintained](https://img.shields.io/badge/Maintained-Yes-success)
+![License](https://img.shields.io/badge/License-MIT-green)
+![Last Commit](https://img.shields.io/github/last-commit/Trojan3877/Disease_Prediction_Capstone)
+![Repo Size](https://img.shields.io/github/repo-size/Trojan3877/Disease_Prediction_Capstone)
+![Stars](https://img.shields.io/github/stars/Trojan3877/Disease_Prediction_Capstone?style=social)
 
-<h1 align="center">⚡ Diabetes Prediction ML System</h1>
 
-<p align="center">
-  End-to-end Machine Learning • FastAPI Microservice • LLM Reasoning • RAG Explainability • MCP Tooling • CI/CD • Docker
-</p>
-
-<p align="center">
-  <!-- BADGES -->
-  <img src="https://img.shields.io/badge/ML-Pipeline-blueviolet?style=flat&logo=python">
-  <img src="https://img.shields.io/badge/LLM-Integrated-orange?style=flat&logo=openai">
-  <img src="https://img.shields.io/badge/RAG-Enabled-yellow?style=flat&logo=opensearch">
-  <img src="https://img.shields.io/badge/MCP-Tools-green?style=flat">
-  <img src="https://img.shields.io/badge/API-FastAPI-teal?style=flat&logo=fastapi">
-  <img src="https://img.shields.io/badge/CI%2FCD-GitHub_Actions-blue?style=flat&logo=githubactions">
-  <img src="https://img.shields.io/badge/Container-Docker-2496ED?style=flat&logo=docker">
-  <img src="https://img.shields.io/badge/Status-Production_Ready-brightgreen?style=flat">
-</p>
-
----
-
-# 🚀 Overview
 
 This repository contains a **production-ready Machine Learning system** for predicting diabetes using structured clinical features.
 
