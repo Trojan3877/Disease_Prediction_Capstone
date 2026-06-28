@@ -1,6 +1,4 @@
-# 🏥 Disease_Prediction_Capstone: AI-Driven Multi-Agent Clinical Diagnostics Pipeline
-
-[![CI](https://github.com/Trojan3877/Disease_Prediction_Capstone/actions/workflows/ci.yml/badge.svg?branch=main&v=4)](https://github.com/Trojan3877/Disease_Prediction_Capstone/actions)
+[![CI](https://img.shields.io/github/actions/workflow/status/Trojan3877/Disease_Prediction_Capstone/ci.yml?branch=main&style=flat-square&logo=github-actions&logoColor=white&label=CI&v=5)](https://github.com/Trojan3877/Disease_Prediction_Capstone/actions)
 ![Python Version](https://img.shields.io/badge/python-3.10%20%7C%203.11%20%7C%203.12-3776AB?style=flat-square&logo=python&logoColor=white)
 ![Code Coverage](https://img.shields.io/badge/coverage-95%25-059669?style=flat-square&logo=pytest&logoColor=white)
 ![Code Style](https://img.shields.io/badge/code%20style-black-000000?style=flat-square)
