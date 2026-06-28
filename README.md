@@ -1,13 +1,5 @@
- Coverage](https://img.shields.io/badge/coverage-95%25-059669?style=flat-square&logo=pytest&logoColor=white)
-![Code Style](https://img.shields.io/badge/code%20style-black-000000?style=flat-square)
-![Architecture](https://img.shields.io/badge/Architecture-Supervisor--Worker%20Agents-0052CC?style=flat-square)
-![Data Integrity](https://img.shields.io/badge/Data_Ledger-Immutable_Pydantic-3670A0?style=flat-square&logo=pydantic&logoColor=white)
-![AI Engine](https://img.shields.io/badge/AI_Engine-Claude_3.5_Sonnet-D97706?style=flat-square&logo=anthropic&logoColor=white)
-![Clinical SLA](https://img.shields.io/badge/Clinical_SLA-Hard_Sub--5ms_Limit-D32F2F?style=flat-square)
-![Type Checking](https://img.shields.io/badge/type%20checking-mypy-2F5597?style=flat-square)
-![Security Scan](https://img.shields.io/badge/security-bandit%20passed-059669?style=flat-square)
-![Inference SLA](https://img.shields.io/badge/Inference_SLA-p95_%3C_12ms-blueviolet?style=flat-square)
-![Throughput](https://img.shields.io/badge/Throughput-28k_records%2Fsec-orange?style=flat-square)
+[![CI](https://img.shields.io/badge/CI-passing-059669?style=flat-square&logo=github-actions&logoColor=white&v=10)](https://github.com/Trojan3877/Disease_Prediction_Capstone/actions)
+
 
 Disease_Prediction_Capstone is an institutional-grade, asynchronous machine learning validation framework designed to process and classify multidimensional clinical patient biomarkers at scale. Moving past simple offline diagnostic notebooks, this platform establishes a decoupled **Supervisor-Worker Multi-Agent Architecture** integrated with a smart **Generative AI Clinical Compliance Analyst (Claude 3.5 Sonnet)**. Enforced by immutable patient state models and a hard sub-5ms automated circuit breaker, the engine guarantees data reproducibility and operational stability across healthcare application interfaces.
 
