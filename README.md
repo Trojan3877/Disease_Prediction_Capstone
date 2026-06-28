@@ -11,7 +11,6 @@
 ![Inference SLA](https://img.shields.io/badge/Inference_SLA-p95_%3C_12ms-blueviolet?style=flat-square)
 ![Throughput](https://img.shields.io/badge/Throughput-28k_records%2Fsec-orange?style=flat-square)
 
-***
 
 Disease_Prediction_Capstone is an institutional-grade, asynchronous machine learning validation framework designed to process and classify multidimensional clinical patient biomarkers at scale. Moving past simple offline diagnostic notebooks, this platform establishes a decoupled **Supervisor-Worker Multi-Agent Architecture** integrated with a smart **Generative AI Clinical Compliance Analyst (Claude 3.5 Sonnet)**. Enforced by immutable patient state models and a hard sub-5ms automated circuit breaker, the engine guarantees data reproducibility and operational stability across healthcare application interfaces.
 
