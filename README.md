@@ -1,6 +1,4 @@
-
-(https://img.shields.io/badge/python-3.10%20%7C%203.11%20%7C%203.12-3776AB?style=flat-square&logo=python&logoColor=white)
-![Code Coverage](https://img.shields.io/badge/coverage-95%25-059669?style=flat-square&logo=pytest&logoColor=white)
+ Coverage](https://img.shields.io/badge/coverage-95%25-059669?style=flat-square&logo=pytest&logoColor=white)
 ![Code Style](https://img.shields.io/badge/code%20style-black-000000?style=flat-square)
 ![Architecture](https://img.shields.io/badge/Architecture-Supervisor--Worker%20Agents-0052CC?style=flat-square)
 ![Data Integrity](https://img.shields.io/badge/Data_Ledger-Immutable_Pydantic-3670A0?style=flat-square&logo=pydantic&logoColor=white)
