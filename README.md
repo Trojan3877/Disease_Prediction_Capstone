@@ -1,4 +1,4 @@
-[![CI](https://img.shields.io/badge/CI-passing-059669?style=flat-square&logo=github-actions&logoColor=white&v=10)](https://github.com/Trojan3877/Disease_Prediction_Capstone/actions)
+
 (https://img.shields.io/badge/python-3.10%20%7C%203.11%20%7C%203.12-3776AB?style=flat-square&logo=python&logoColor=white)
 ![Code Coverage](https://img.shields.io/badge/coverage-95%25-059669?style=flat-square&logo=pytest&logoColor=white)
 ![Code Style](https://img.shields.io/badge/code%20style-black-000000?style=flat-square)
