@@ -1,4 +1,5 @@
-[![CI](https://img.shields.io/github/actions/workflow/status/Trojan3877/Disease_Prediction_Capstone/ci.yml?branch=main&style=flat-square&logo=github-actions&logoColor=white&label=CI&v=5)](https://github.com/Trojan3877/Disease_Prediction_Capstone/actions)
+
+[![CI](https://github.com/Trojan3877/Disease_Prediction_Capstone/actions/workflows/ci.yml/badge.svg?branch=main&v=8)](https://github.com/Trojan3877/Disease_Prediction_Capstone/actions)
 ![Python Version](https://img.shields.io/badge/python-3.10%20%7C%203.11%20%7C%203.12-3776AB?style=flat-square&logo=python&logoColor=white)
 ![Code Coverage](https://img.shields.io/badge/coverage-95%25-059669?style=flat-square&logo=pytest&logoColor=white)
 ![Code Style](https://img.shields.io/badge/code%20style-black-000000?style=flat-square)
@@ -10,7 +11,6 @@
 ![Security Scan](https://img.shields.io/badge/security-bandit%20passed-059669?style=flat-square)
 ![Inference SLA](https://img.shields.io/badge/Inference_SLA-p95_%3C_12ms-blueviolet?style=flat-square)
 ![Throughput](https://img.shields.io/badge/Throughput-28k_records%2Fsec-orange?style=flat-square)
-
 
 Disease_Prediction_Capstone is an institutional-grade, asynchronous machine learning validation framework designed to process and classify multidimensional clinical patient biomarkers at scale. Moving past simple offline diagnostic notebooks, this platform establishes a decoupled **Supervisor-Worker Multi-Agent Architecture** integrated with a smart **Generative AI Clinical Compliance Analyst (Claude 3.5 Sonnet)**. Enforced by immutable patient state models and a hard sub-5ms automated circuit breaker, the engine guarantees data reproducibility and operational stability across healthcare application interfaces.
 
